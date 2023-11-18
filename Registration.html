@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+
+        .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #343434;
+        }
+        
+        .logo {
+          width: 100px;
+        }
+        
+        .menu {
+          display: flex;
+          gap: 20px;
+          flex-grow: 1;
+          justify-content: space-around;
+          margin-top: 27px;
+        }
+        
+        .menu a {
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+        }
+        
+        .menu a:hover {
+          color: #d42828;
+        }
+        
+        .account {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        }
+        
+        .account img {
+          width: 35px;
+          margin-right: 15px;
+        }
+        
+        .account a {
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+        }
+
+form {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+input[type=text], input[type=password] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  margin-right: 10px;
+}
+
+label {
+  display: inline-block;
+  font-size: 14px;
+}
+
+a {
+  color: #0099ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+        .footer {
+  background-color: rgb(41, 41, 41);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  align-content: space-between;
+}
+
+.footer a {
+  color: #fff;
+  text-align: center;
+  text-decoration: solid;
+}
+
+.footer a:hover {
+  color: #007bff;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="LOGO.PNG" alt="Website Logo">
+        <div class="menu">
+          <a href="home.html">Home</a>
+          <a href="doctors.html">Doctors</a>
+          <a href="appointments.html">Appointments</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="account">
+          <a href="http://127.0.0.1:5500/login%20form.html">
+          <img src="profile.png" alt="Account Icon">
+          </a>
+        </div>
+      </div>
+
+      <h1 style="text-align: center">Register Yourself</h1>
+<form action="/login" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" placeholder="Enter Username" required>
+  <label for="username">Email:</label>
+  <input type="text" id="email" name="email" placeholder="Enter Email" required>
+  <label for="username">Mobile No.:</label>
+  <input type="text" id="Mobile" name="Mobile No." placeholder="Enter Mobile No." required>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" placeholder="Enter Password" required>
+  <input type="checkbox" id="remember" name="remember">
+  <label for="remember">Remember me</label>
+  <input type="submit" value="Register">
+  <p>Already have an account? <a href="http://127.0.0.1:5500/login%20form.html">Log In</a></p>
+</form>
+      
+      <div class="footer">
+        <h4>About Us</h4>
+        <p>We are a team of doctors who provide quality health care services to our patients. We offer a range of specialties, such as cardiology, neurology, orthopedics, and more. We also have online appointments and telemedicine facilities for your convenience.</p>
+        <h4>Quick Links</h4>
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+          <li><a href="http://127.0.0.1:5500/Home.html">Home</a></li>
+          <li><a href="http://127.0.0.1:5500/Doctors.html">Doctors</a></li>
+          <li><a href="http://127.0.0.1:5500/Appointments.html">Appointments</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h4>Contact Us</h4>
+        <p><i class="fa fa-map-marker"></i> Jaipur, Rajasthan, India</p>
+        <p><i class="fa fa-phone"></i> +91-6373457890</p>
+        <p><i class="fa fa-envelope"></i> info@healthcare.com</p>
+        <p><i class="fa fa-facebook"></i> <a href="#">Facebook</a></p>
+        <p><i class="fa fa-twitter"></i> <a href="#">Twitter</a></p>
+        <p>&copy; 2023 Healthcare. All rights reserved.</p>
+      </div>
+</body>
+</html>
